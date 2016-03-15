@@ -1,5 +1,5 @@
 /*
- CSS_Selector-InspectorJS v1.0 by Uyen Nguyen
+ CssSelector-InspectorJS v1.0 by Uyen Nguyen
  An open source library. :) Feel free to use it for your product
  
  The inspector is available since you loaded the page
