@@ -1,5 +1,5 @@
 # csspath_jsInspector
-A lightweight JavaScript library to help you generate ‘smart’ CSS selectors by clicking anywhere on a web page.
+A lightweight JavaScript library to help you generate CSS selectors by clicking anywhere on a web page.
 
 An open source library. :) Feel free to use it on your product.
 
