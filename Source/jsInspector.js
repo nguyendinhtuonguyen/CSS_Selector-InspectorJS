@@ -35,7 +35,7 @@
     };
 
 
-    inspectorWrapper.prototype.merge_options = function (obj1, obj2) {
+    inspectorWrapper.prototype.merge = function (obj1, obj2) {
         var obj3 = {};
         for (var attrname in obj1) {
             obj3[attrname] = obj1[attrname];
@@ -47,7 +47,7 @@
     }
 
     inspectorWrapper.prototype.config = function (config) {
-        this.options = this.merge_options(this.defaults, config);
+        this.options = this.merge(this.defaults, config);
     }
 
     function inspectorMouseOver(e) {
