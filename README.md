@@ -24,5 +24,5 @@ Load the script file: jsInspector.js to your application:
  Using by calling window.inspector
  
 ##Options:
-- ignoreClasses:"", //element math this class regix patterns aren't counted
-- hiddenClasses:"", //element matches this class regix patterns will be ignored all its css
+- ignoreClasses: element matches this class regix patterns aren't counted
+- hiddenClasses: element matches this class regix patterns will be ignored all its css
