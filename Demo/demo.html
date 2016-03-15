@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Path Inspector</title>
+    <script type="text/javascript" src="../Source/ibInspector.js"></script>
+
+    <style type="text/css">
+        div {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        #div_a {
+            border: 2px dotted #b1bbff;
+        }
+
+        .abc.xyz {
+            border: 2px dotted #bce5ff;
+        }
+
+        .xyz {
+            height: 30px;
+        }
+
+        .abc {
+            background-color: cornsilk;
+            border: 2px dotted #011fff;
+        }
+
+    </style>
+
+    <script type="application/javascript">
+        function startInpect() {
+            window.inspector.config({ignoreClasses: [/^abc$/]});
+
+            window.inspector.start({}, function (event, csspath) {
+
+                document.getElementById("css_value").value = csspath;
+
+            }, function () {
+
+            });
+        }
+    </script>
+</head>
+
+<body>
+<div>
+    <ul>
+        <li>Click to <b>Start</b> button to start the inspector</li>
+        <li>Demo is ignoring class 'abc'</li>
+        <li>Press any key to escape</li>
+    </ul>
+    <div class="abc">
+        class="abc"
+        <div id="div_a">
+            id=div_a
+            <div class="abc xyz" id="222">
+                class="abc xyz" id="222"
+            </div>
+            <div class="abc xyz">
+                class="abc xyz"
+            </div>
+            <div class="abc xyz">
+                class="abc xyz"
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div style="margin-top:0px">
+    <input type="button" onclick="startInpect()" value="Start" stype="width:50px"/>
+    <input type="text" id="css_value" style="width: 200px">
+
+</div>
+</body>
+</html>
