@@ -14,9 +14,9 @@ A quick high-level overview:
 - Return full path to a custom callback to the users
 
 ##Installation
-Load the script file: sortable.js in your application:
+Load the script file: jsInspector.js to your application:
 ```html
-<script type="text/javascript" src="..../Source/ibInspector.js"></script>
+<script type="text/javascript" src="..../Source/jsInspector.js"></script>
 ```
 
 ##Usage
