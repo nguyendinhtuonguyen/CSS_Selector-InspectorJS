@@ -1,8 +1,10 @@
 /*
- csspath_jsInspector v1.0 by Uyen Nguyen
+ CSS_Selector-InspectorJS v1.0 by Uyen Nguyen
  An open source library. :) Feel free to use it for your product
+ 
  The inspector is available since you loaded the page
  Using by calling window.inspector
+ 
  A quick high-level overview:
 - Capture an element by a click
 - Traverses up the DOM tree querying both the current location’s parent element and the global document (DOM)
@@ -14,9 +16,8 @@
 - Return full path by a custom callback to the users
 
  Config options:
-- ignoreClasses:"", //element math this class regix patterns aren't counted
-- hiddenClasses:"", //element matches this class regix patterns will be ignored all its css
-
+- ignoreClasses: element math this class regix patterns aren't counted
+- hiddenClasses: element matches this class regix patterns will be ignored all its css
  */
 
 (function (document) {
