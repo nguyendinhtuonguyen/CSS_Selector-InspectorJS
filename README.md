@@ -12,10 +12,10 @@ A quick high-level overview:
 - Check it has a class/tag which is unique to it’s parent
 - Support ‘nth-child’ selector
 - Continue to build up a selector string until find one which is able to return the original target element
-- Return full path to a custom callback to the users
+- Return full css selector path to a custom callback defined by user
 
 ##Installation
-Load the script file: jsInspector.js to your application:
+Load the script file: inspector.js to your application:
 ```html
 <script type="text/javascript" src="..../Source/inspector.js"></script>
 ```
