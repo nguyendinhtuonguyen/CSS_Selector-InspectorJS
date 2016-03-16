@@ -17,7 +17,7 @@ A quick high-level overview:
 ##Installation
 Load the script file: jsInspector.js to your application:
 ```html
-<script type="text/javascript" src="..../Source/jsInspector.js"></script>
+<script type="text/javascript" src="..../Source/inspector.js"></script>
 ```
 
 ##Usage
