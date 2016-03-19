@@ -14,7 +14,6 @@ _module.exports = function (grunt) {
 
     });
 
-    grunt.option('verbose');
-    grunt.registerTask('travis', ['jshint']);
+    grunt.registerTask('travis', []);
 
 };
