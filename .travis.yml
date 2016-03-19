@@ -3,10 +3,12 @@ language: node_js
 node_js:
   - '0.10'
 before_install:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - npm install -g grunt-cli
-  - npm -g install npm@latest
+  - npm install -g grunt-clie
+  - npm update
 notifications:
   email:
-    on_success: never
+    on_success: change
+    sudo: false
+cache:
+    directories:
+        - node_modules
