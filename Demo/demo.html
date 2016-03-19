@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Css Path Inspector</title>
-    <script type="text/javascript" src="../Source/inspector.js"></script>
+    <title>CssSelector-InspectorJS</title>
+    <script type="text/javascript" src="../src/inspector.js"></script>
 
     <style type="text/css">
-        div {
+
+        #hoverpart div {
             padding: 20px;
-            margin-top: 20px;
+            margin: 20px;
         }
 
         #div_a {
@@ -47,33 +48,41 @@
 
 <body>
 <div>
+    <span>
+        <h1>CssSelector-InspectorJS</h1>
+    </span>
     <ul>
-        <li>Click to <b>Start</b> button to start the inspector</li>
+        <li>Click to <b>START</b> button to start the inspector</li>
         <li>Demo is ignoring class 'abc'</li>
         <li>Press any key to escape</li>
     </ul>
-    <div class="abc">
-        class="abc"
-        <div id="div_a">
-            id=div_a
-            <div class="abc xyz" id="222">
-                class="abc xyz" id="222"
-            </div>
-            <div class="abc xyz">
-                class="abc xyz"
-            </div>
-            <div class="abc xyz">
-                class="abc xyz"
-            </div>
-        </div>
 
+    <div style="margin:20px">
+        <input type="button" onclick="startInpect()" value="START" stype="width:50px"/>
+    <span>
+        Css path: <input type="text" id="css_value" style="width: 200px">
+    </span>
     </div>
+    <div id="hoverpart">
+        <div class="abc">
+            class="abc"
+            <div id="div_a">
+                id=div_a
+                <div class="abc xyz" id="222">
+                    class="abc xyz" id="222"
+                </div>
+                <div class="abc xyz">
+                    class="abc xyz"
+                </div>
+                <div class="abc xyz">
+                    class="abc xyz"
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>
 
-<div style="margin-top:0px">
-    <input type="button" onclick="startInpect()" value="Start" stype="width:50px"/>
-    <input type="text" id="css_value" style="width: 200px">
-
-</div>
 </body>
 </html>

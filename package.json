@@ -1,0 +1,15 @@
+{
+  "name": "CssSelector-InspectorJS",
+  "version": "1.0",
+  "description": "A lightweight JavaScript library to help you generate CSS selectors by clicking anywhere on a web page.",
+  "author": "https://github.com/nguyendinhtuonguyen/CssSelector-InspectorJS/graphs/contributors",
+  "main": "./src/inspector.js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt travis -v"
+}
+}
