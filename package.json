@@ -10,8 +10,5 @@
   },
   "scripts": {
     "test": "grunt travis -v"
-  },
-  "dependencies": {
-    "npm-2": "^2.15.0"
   }
 }
