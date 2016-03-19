@@ -8,6 +8,13 @@
     "url": "https://github.com/nguyendinhtuonguyen/CssSelector-InspectorJS.git"
   },
   "main": "./src/inspector.js",
+  "keywords": [
+    "css selector",
+    "inspector",
+    "css path",
+    "select dom",
+    "select web element"
+  ],
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^1.0.0",
