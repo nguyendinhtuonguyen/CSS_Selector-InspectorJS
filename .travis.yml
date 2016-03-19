@@ -8,10 +8,5 @@ before_install:
   - sh -e /etc/init.d/xvfb start
   - npm install -g grunt-cli
   - npm -g install npm@latest
-notifications:
-  email:
-    on_success: change
-    sudo: false
-cache:
-    directories:
-        - node_modules
+sudo: false
+script: test
