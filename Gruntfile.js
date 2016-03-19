@@ -1,6 +1,7 @@
 var _module = module; // jshint ignore:line
 
 _module.exports = function (grunt) {
+    require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});// jshint ignore:line
 
     grunt.initConfig({
         jshint: {
@@ -15,11 +16,10 @@ _module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.registerTask('jshint', ['jshint']);
+    grunt.registerTask('default', ['jshint']);
 
     grunt.registerTask('travis', [
-        'jshint'
+        'default'
     ]);
 };
