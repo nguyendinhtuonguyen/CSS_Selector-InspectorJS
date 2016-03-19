@@ -10,10 +10,10 @@ _module.exports = function (grunt) {
             options: {
                 jshintrc: '.jshintrc'
             }
-        },
+        }
 
     });
 
-    grunt.registerTask('travis', []);
+    grunt.registerTask('build', ['jshint']);
 
 };
