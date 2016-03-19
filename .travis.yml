@@ -4,5 +4,5 @@ node_js:
   - '4.2'
 before_install:
   - npm install -g grunt-cli
-  - npm install -q
+  - npm -g install npm@latest
 sudo: false
