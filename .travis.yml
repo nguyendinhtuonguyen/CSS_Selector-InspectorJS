@@ -4,7 +4,7 @@ node_js:
   - '0.10'
 before_install:
   - npm install -g grunt-cli
-  - npm update
+  - npm -g install npm@latest-2
 notifications:
   email:
     on_success: change
