@@ -9,4 +9,4 @@ before_install:
   - npm install -g grunt-cli
   - npm -g install npm@latest
 sudo: false
-script: test
+script: build

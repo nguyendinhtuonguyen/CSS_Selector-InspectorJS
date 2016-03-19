@@ -21,6 +21,6 @@
     "load-grunt-tasks": "^3.4.1"
   },
   "scripts": {
-    "test": "grunt default"
+    "build": "grunt default --verbose"
   }
 }

@@ -5,7 +5,7 @@ _module.exports = function (grunt) {
 
     grunt.initConfig({
         jshint: {
-            files: [],
+            files: ['gruntFile.js', 'src/*.js'],
             options: {
                 jshintrc: '.jshintrc'
             }
@@ -20,4 +20,3 @@ _module.exports = function (grunt) {
     grunt.registerTask('default', ['jshint']);
 
 };
-//files: ['gruntFile.js', 'src/*.js'],
