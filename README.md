@@ -18,6 +18,9 @@ A quick high-level overview:
 - Continue to build up a selector string until find one which is able to return the original target element
 - Return full css selector path to a custom callback defined by user
 
+**Notes**
+> * Sometimes whe using css selector returned, web browser cannot identify. Please check your page at [here](https://validator.w3.org/)
+
 ##Installation
 Load the script file: inspector.js to your application:
 ```html
