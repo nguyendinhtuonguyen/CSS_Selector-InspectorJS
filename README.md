@@ -1,7 +1,11 @@
 # CssSelector-InspectorJS
+
+[![Build Status](https://travis-ci.org/nguyendinhtuonguyen/CssSelector-InspectorJS.svg?branch=master)](https://travis-ci.org/nguyendinhtuonguyen/CssSelector-InspectorJS)
+
 A lightweight JavaScript library to help you generate CSS selectors by clicking anywhere on a web page.
 
 An open source library. :) Feel free to use it on your product.
+
 
 ##How does it work?
 A quick high-level overview:
