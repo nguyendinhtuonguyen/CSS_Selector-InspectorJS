@@ -1,6 +1,6 @@
 {
   "name": "CssSelector-InspectorJS",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "A lightweight JavaScript library to help you generate CSS selectors by clicking anywhere on a web page.",
   "author": "https://github.com/nguyendinhtuonguyen/CssSelector-InspectorJS/graphs/contributors",
   "repository": {
