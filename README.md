@@ -24,7 +24,7 @@ A quick high-level overview:
 ##Installation
 Load the script file: inspector.js to your application:
 ```html
-<script type="text/javascript" src="..../Source/inspector.js"></script>
+<script type="text/javascript" src="..../src/inspector.js"></script>
 ```
 
 ##Usage
