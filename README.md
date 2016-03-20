@@ -19,7 +19,7 @@ A quick high-level overview:
 - Return full css selector path to a custom callback defined by user
 
 **Notes**
-> * Sometimes whe using css selector returned, web browser cannot identify. Please check your page at [here](https://validator.w3.org/)
+> * Sometimes when using css selector returned, web browser cannot identify. Please check your page at [here](https://validator.w3.org/)
 
 ##Installation
 Load the script file: inspector.js to your application:
