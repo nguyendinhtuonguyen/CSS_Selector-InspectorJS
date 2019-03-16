@@ -1,37 +1,33 @@
-# CssSelector-InspectorJS
+# CssSelector-InspectorJS  
 
-[![Build Status](https://travis-ci.org/nguyendinhtuonguyen/CssSelector-InspectorJS.svg?branch=master)](https://travis-ci.org/nguyendinhtuonguyen/CssSelector-InspectorJS)
+一个轻量级JavaScript库，通过单击网页上的任意位置来帮助您生成CSS选择器。  
+一个开源库。:)随意在您的产品上使用它。  
 
-A lightweight JavaScript library to help you generate CSS selectors by clicking anywhere on a web page.
+## 是如何工作的？快速高级概述：  
 
-An open source library. :) Feel free to use it on your product.
+通过单击捕获元素  
+遍历DOM树，查询当前位置的父元素和全局文档（DOM）  
+检查目标元素是否具有ID  
+检查它是否具有全局文档唯一的类/标记  
+检查它是否有一个类/标签，它的父母是唯一的  
+支持'n-child'选择器  
+继续构建一个选择器字符串，直到找到一个能够返回原始目标元素的字符串  
+将完整的css选择器路径返回到用户定义的自定义回调  
 
+**Notes**  
 
-##How does it work?
-A quick high-level overview:
-- Capture an element by a click
-- Traverses up the DOM tree querying both the current location’s parent element and the global document (DOM)
-- Check if the target element has an ID
-- Check it has a class/tag which is unique to the global document
-- Check it has a class/tag which is unique to it’s parent
-- Support ‘nth-child’ selector
-- Continue to build up a selector string until find one which is able to return the original target element
-- Return full css selector path to a custom callback defined by user
+有时当使用css选择器返回时，Web浏览器无法识别。请在此处查看您的页面  
 
-**Notes**
-> Sometimes when using css selector returned, web browser cannot identify. Please check your page at [here](https://validator.w3.org/)
+## 安装将脚本文件：inspector.js加载到您的应用程序：  
 
-##Installation
-Load the script file: inspector.js to your application:
-```html
-<script type="text/javascript" src="..../src/inspector.js"></script>
-```
+`<script type="text/javascript" src="..../src/inspector.js"></script>`
+## 用法自加载页面以来，检查器可用  
 
-##Usage
- The inspector is available since you loaded the page
- 
- Using by calling window.inspector
- 
-##Options:
-- ignoreClasses: element matches this class regix patterns aren't counted
-- hiddenClasses: element matches this class regix patterns will be ignored all its css
+通过调用window.inspector来使用  
+
+## 选项：  
+
+ignoreClasses：element匹配此类regix模式不计算在内  
+hiddenClasses：element匹配此类regix模式将忽略其所有css  
+
+原项目地址：[https://github.com/nguyendinhtuonguyen/CssSelector-InspectorJS](https://github.com/nguyendinhtuonguyen/CssSelector-InspectorJS)  
