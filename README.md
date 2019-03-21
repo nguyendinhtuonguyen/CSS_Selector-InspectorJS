@@ -55,6 +55,7 @@ hiddenClasses：将忽略其所有css
     $('head').append($("<script type='text/javascript'></script>").text(data));
   });
 ```
+3.执行回调
 ```
   function clickedCallback(event, pathms) {
       console.log(event);
