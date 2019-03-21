@@ -27,7 +27,38 @@
 
 ## 选项：  
 
-ignoreClasses：element匹配此类regix模式不计算在内  
-hiddenClasses：element匹配此类regix模式将忽略其所有css  
+ignoreClasses：忽略传入的class选择 
+hiddenClasses：将忽略其所有css  
+## 快速上手
+1.[js外挂](https://raw.githubusercontent.com/zctmdc/fakeQQInfo/master/loadByJS.js)  
+```
+  function loadScript(data) {
+    let script = document.createElement('script');
+    script.type = "text/javascript";
+    script.text = data;
+    document.head.appendChild(script);
+  }
+  function ajaxget(url, fnSucceed) {   
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.onreadystatechange = function () {
+      xhr.readyState == 4 && xhr.status == 200 && fnSucceed && fnSucceed(xhr.responseText);
+    };
+    xhr.send();
+  }
+  ajaxget('https://raw.githubusercontent.com/zctmdc/CssSelector-InspectorJS/master/src/inspector.js', loadScript);
+```
 
-原项目地址：[https://github.com/nguyendinhtuonguyen/CssSelector-InspectorJS](https://github.com/nguyendinhtuonguyen/CssSelector-InspectorJS)  
+2.[jq外挂](https://raw.githubusercontent.com/zctmdc/fakeQQInfo/master/loadByJQ.js)  
+```
+  $.get('https://raw.githubusercontent.com/zctmdc/CssSelector-InspectorJS/master/src/inspector.js', function (data) {
+    $('head').append($("<script type='text/javascript'></script>").text(data));
+  });
+```
+```
+  function clickedCallback(event, pathms) {
+      console.log(event);
+      console.log(pathms);
+  }
+  window.inspector.start(clickedCallback);
+  ```
