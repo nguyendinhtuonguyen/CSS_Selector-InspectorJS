@@ -1,21 +1,24 @@
 /*
- CssSelector-InspectorJS v1.0 by Uyen Nguyen
- An open source library. :) Feel free to use it for your product
+ //通过谷歌翻译完成
+ CssSelector-InspectorJS v1.0 
+ 开发者：Uyen Nguyen
+ 
+ 一个开源库 :) 随意使用它在您的产品中
 
- The inspector is available since you loaded the page
- Using by calling window.inspector
+加载页面后，检查器可用
+ 通过调用window.inspector来使用
 
- A quick high-level overview:
- - Capture an element by a click
- - Traverses up the DOM tree querying both the current location’s parent element and the global document (DOM)
- - Check if the target element has an ID
- - Check it has a class/tag which is unique to the global document
- - Check it has a class/tag which is unique to it’s parent
- - Support ‘nth-child’ selector
- - Continue to build up a selector string until find one which is able to return the original target element
- - Return full path by a custom callback to the users
+快速高级概述：
+ - 通过单击捕获元素
+ - 遍历DOM树，查询当前位置的父元素和全局文档 (DOM)
+ - 检查目标元素是否具有ID
+ - 检查它是否具有全局文档唯一的类/标记
+ - 检查它是否有一个类/标签，它的父母是唯一的
+ - 支持'n-child'选择器
+ - 继续构建一个选择器字符串，直到找到一个能够返回原始目标元素的字符串
+ - 通过自定义回调向用户返回完整路径
 
- Config options:
+ 配置选项:
  - ignoreClasses: element math this class regix patterns aren't counted
  - hiddenClasses: element matches this class regix patterns will be ignored all its css
  */
@@ -100,9 +103,9 @@
     };
 
 
-    window.inspectorWrapper.prototype.start = function (config, clickedCallback, cancelCallback) {
+    window.inspectorWrapper.prototype.start = function (clickedCallback, cancelCallback, config = {}) {
         if (document.addEventListener) {
-
+            this.config(config);
             this.inspectorClickedCallback = clickedCallback;
             this.inspectorCancelCallback = cancelCallback;
 
