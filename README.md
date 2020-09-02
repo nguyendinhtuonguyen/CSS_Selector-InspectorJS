@@ -7,7 +7,7 @@ A lightweight JavaScript library to help you generate CSS selectors by clicking 
 An open source library. :) Feel free to use it on your product.
 
 
-##How does it work?
+## How does it work?
 A quick high-level overview:
 - Capture an element by a click
 - Traverses up the DOM tree querying both the current location’s parent element and the global document (DOM)
@@ -21,17 +21,17 @@ A quick high-level overview:
 **Notes**
 > Sometimes when using css selector returned, web browser cannot identify. Please check your page at [here](https://validator.w3.org/)
 
-##Installation
+## Installation
 Load the script file: inspector.js to your application:
 ```html
 <script type="text/javascript" src="..../src/inspector.js"></script>
 ```
 
-##Usage
+## Usage
  The inspector is available since you loaded the page
  
  Using by calling window.inspector
  
-##Options:
+## Options:
 - ignoreClasses: element matches this class regix patterns aren't counted
 - hiddenClasses: element matches this class regix patterns will be ignored all its css
